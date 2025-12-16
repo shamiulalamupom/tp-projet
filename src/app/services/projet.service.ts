@@ -3,7 +3,6 @@ import { Injectable, signal } from '@angular/core';
 export enum ProjetStatut {
   EnCours = 'En cours',
   Termine = 'Terminé',
-  EnAttente = 'En attente',
 }
 
 export type Projet = { id: number; nom: string; statut: string };
