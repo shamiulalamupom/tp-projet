@@ -16,7 +16,7 @@ export class AjouterProjetComponent {
 
   nom = '';
   statut: ProjetStatut = ProjetStatut.EnCours;
-  ProjetStatut = ProjetStatut;
+  statutEnum = ProjetStatut;
 
   submit() {
     // no business logic: just call the service
