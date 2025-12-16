@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { ProjetService } from '../../services/projet.service';
+import { ProjetService, ProjetStatut } from '../../services/projet.service';
 
 @Component({
   selector: 'app-ajouter-projet',
@@ -15,7 +15,8 @@ export class AjouterProjetComponent {
   private router = inject(Router);
 
   nom = '';
-  statut = '';
+  statut: ProjetStatut = ProjetStatut.EnCours;
+  ProjetStatut = ProjetStatut;
 
   submit() {
     // no business logic: just call the service

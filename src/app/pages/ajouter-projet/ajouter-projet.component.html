@@ -8,7 +8,10 @@
 
   <label>
     Status
-    <input name="statut" [(ngModel)]="statut" required />
+    <select name="statut" [(ngModel)]="statut" required>
+      <option [ngValue]="ProjetStatut.EnCours">En cours</option>
+      <option [ngValue]="ProjetStatut.Termine">Terminé</option>
+    </select>
   </label>
 
   <button type="submit">Add</button>
