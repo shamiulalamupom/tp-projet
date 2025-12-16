@@ -1,0 +1,11 @@
+<a routerLink="/">&lt; Back</a>
+
+<div *ngIf="notFound" style="margin-top: 12px">
+  <p>Project not found.</p>
+</div>
+
+<div *ngIf="!notFound && projet" style="margin-top: 12px">
+  <h2>{{ projet.nom }}</h2>
+  <p><strong>ID:</strong> {{ projet.id }}</p>
+  <p><strong>Status:</strong> {{ projet.statut }}</p>
+</div>
